@@ -1,6 +1,6 @@
 {
     "apps":[{
-        "name":"PM2DeplayTest",
+        "name":"PM2DeployTest",
         "script":"server.js",
         "instances": 4,
         "env": {
