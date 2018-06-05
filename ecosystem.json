@@ -14,7 +14,7 @@
         "production": {
             "user":"david",
             "host": ["pservice.runmaf.com"],
-            "ref": "orign/master",
+            "ref": "origin/master",
             "repo": "https://github.com/yuezaixz/PM2DeployTest.git",
             "path": "/data/www/PM2DeployTest",
             "ssh_options": "StrictHostKeyChecking=no",
