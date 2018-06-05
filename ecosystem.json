@@ -1,0 +1,28 @@
+{
+    "apps":[{
+        "name":"PM2DeplayTest",
+        "script":"server.js",
+        "instances": 4,
+        "env": {
+            "COMMON_VARIABLE" : "true",
+        },
+        "env_production": {
+            "NODE_ENV": "production"
+        }
+    }],
+    "deploy": {
+        "production": {
+            "user":"david",
+            "host": ["pservice.runmaf.com"],
+            "ref": "orign/master",
+            "repo": "https://github.com/yuezaixz/PM2DeployTest.git",
+            "path": "/data/www/PM2DeployTest",
+            "ssh_options": "StrictHostKeyChecking=no",
+            // "post-deploy": "npm install",
+            "pre-deploy-local": "echo 'Deploy done!'",
+            "env": {
+                "NODE_ENV": "production"
+            }
+        }
+    }
+}
